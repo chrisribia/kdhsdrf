@@ -83,19 +83,7 @@ WSGI_APPLICATION = 'SMSAP.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 DEBUG = True
-if DEBUG:
-     DATABASES = {
-        'default': {
-              'ENGINE': 'django.db.backends.mysql',
-        'NAME':'djangoAuth',
-        'USER': 'chrisribia',  
-        'PASSWORD': 'ribia100',  
-        'HOST': '127.0.0.1',  
-        'PORT': '3306',  
-        }
-    }
-
-else:
+ 
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
