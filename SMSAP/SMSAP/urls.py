@@ -20,6 +20,7 @@ router.register("SubjectsCombinationList",SubjectSelectionListViewset,basename="
 urlpatterns = [
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
+    path('classLists/', include(router.urls)),
     path('profile/', include(router.urls)),
     path('classDetails/', include(router.urls)), 
     path('Subjects/', include(router.urls)), 
